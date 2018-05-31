@@ -1,17 +1,26 @@
 window.cipher = {
-  encode: (offset, string) => {
-    let mensajeFinal = "";
-    for (index=0;index < string.length;index++)
+  encode: (offset, string) => { 
+    let mensajeCifrado = "";
+    for (index=0; index < string.length;index++)
     {
-      let codigoACSII = string.charCodeAt(index);
-      let guardarACSII = (codigoACSII- 65 + offset )%26 + 65;
-      let codigoLetra = String.fromCharCode(guardarACSII);
-      mensajeFinal += codigoLetra;
+     const getIndexACSII = string.charCodeAt(index); 
+      let formulaACSII = (getIndexACSII- 65 + offset )%26 + 65; 
+      let cipherText = String.fromCharCode(formulaACSII);
+      mensajeCifrado += cipherText;
        }
 
-return mensajeFinal;
+return mensajeCifrado;
   },
+
   decode: (offset,string) => {
-    /* Acá va tu código */
+    let mensajeCifrado ="";
+    for (index=0; index < string.length;index++)
+    {
+      const getIndexACSII = string.charCodeAt(index); 
+      let formulaACSII = (getIndexACSII- 65 - offset )%26 + 65; 
+      let cipherText = String.fromCharCode(formulaACSII);
+      mensajeCifrado += cipherText;
+    }
+  return mensajeCifrado;
   }
 }

@@ -7,23 +7,24 @@
 </head>
 <body>
   <center>
-    <script type="text/javascript" src="app.js"></script>
- <img style="width:220px; height:220px;" 
-        src="https://www.romaimperial.com/imagenes/Cayo-Julio-C%C3%A9sar-Imperio-Romano.png">
+    <img style="width:220px; height:220px;" src="https://www.romaimperial.com/imagenes/Cayo-Julio-C%C3%A9sar-Imperio-Romano.png">
        <h1>Bienvenido al cifrado César</h1>  
     
 
-        <input type= “text”>
-        <div id="botón"></span> <button type="submit">Ingresar número</button></div>
+        <input id="obtenernumero" type= “text”>
+        
 
-   <div class="cipher"></span> 
-  <h3>Escribe texto aquí</h3> <p><textarea name="message" rows="7" cols="50"></textarea> </textarea></p></div>
+     <h3>Escribe texto aquí</h3><textarea id="escribirmensaje" name="message" rows="7" cols="50"></textarea> </textarea>
 
-   <div id="botón"></span> <button type="submit">Invertir</button></div>
+   <div id="botón"> <button type="submit" onclick="obtenerInformacion()">Cifrar</button></div>
+   <div id="botón"> <button type="submit"onclick="obtenerInformacion2()">Descifrar</button></div>
 
-<span id="Cuerpo2">
+<span id="Cuerpo2"></span>
         <h3>Texto cifrado</h3> 
-    <p><textarea name="message" rows="7" cols="50"></textarea> </textarea></p></span>
+ <div id="mensajeCifrado"> </div>
+ <div id="mensajedescifrado"> </div>
+
+
 </center>
 
   <div id="root"></div>
