@@ -2,22 +2,27 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech|Share+Tech+Mono" rel="stylesheet">
+  
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body style="background-color: #222222;">
   <center>
     <img style="width:220px; height:220px;" src="https://www.romaimperial.com/imagenes/Cayo-Julio-C%C3%A9sar-Imperio-Romano.png">
        <h1>Bienvenido al cifrado César</h1>  
-    
+    <br></br>
 
         <input id="obtenernumero" type= “text”>
-        
+     <br></br>
+     <h3>Escribe texto aquí</h3>
+     <br></br>
+     <textarea id="escribirmensaje" name="message" rows="7" cols="50"></textarea> </textarea>
 
-     <h3>Escribe texto aquí</h3><textarea id="escribirmensaje" name="message" rows="7" cols="50"></textarea> </textarea>
-
-   <div id="botón"> <button type="submit" onclick="obtenerInformacion()">Cifrar</button></div>
-   <div id="botón"> <button type="submit"onclick="obtenerInformacion2()">Descifrar</button></div>
+     <center><i class="fas fa-kiwi-bird" fa-10x></i><center>
+      <br></br>
+   <button type="submit" onclick="obtenerInformacion()">Cifrar</button>
+  <button type="submit"onclick="obtenerInformacion2()">Descifrar</button>
 
 <span id="Cuerpo2"></span>
         <h3>Texto cifrado</h3> 
