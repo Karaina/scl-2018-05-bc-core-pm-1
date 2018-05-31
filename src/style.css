@@ -1,1 +1,8 @@
-/* Acá va tu código */
+h1 {
+    font-family: 'Share Tech Mono', monospace;
+    color: rgb(54, 36, 36);
+    text-align: center;
+    font-size: 45pt;
+    margin: 0px;
+
+}
