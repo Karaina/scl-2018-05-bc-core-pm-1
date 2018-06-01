@@ -1,8 +1,74 @@
 h1 {
     font-family: 'Share Tech Mono', monospace;
-    color: rgb(54, 36, 36);
+    color: rgb(24, 17, 17);
+    background: rgb(182, 177, 177);
     text-align: center;
-    font-size: 45pt;
+    font-size: 30pt;
+    padding: 10px 20px 10px 20px;
+    width: 450px;
     margin: 0px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #eeeeee;
 
+}
+h3 {
+    font-family: 'Share Tech';
+    color: rgb(24, 17, 17);
+    background: rgb(182, 177, 177);
+    text-align: center;
+    font-size: 14pt;
+    padding: 10px 20px;
+    margin: 0px;
+    width: 450px;
+}
+
+#buttom {
+    background:#be3030;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 8px;
+	color: white;
+	font-size: 16px;
+	transition-duration: .5s;
+    margin-top: 15px;
+    width: 100px;
+    border-style: dashed;
+    border: 1px solid #eeeeee;
+    display: inline;
+}
+
+.mensaje {
+    font-family: "Share Tech";
+    font-size: 16pt;
+    color: #eeeeee;
+}
+
+#escribirmensaje {
+    border: 1px solid #eeeeee;
+    /*background:#be3030;*/
+    color: black;
+}
+
+#obtenernumero {
+    width: 50px;
+    font-size: 30px;
+
+}
+
+#button:hover {
+    background:#eeeeee;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 8px;
+	color: black;
+	font-size: 16px;
+	transition-duration: .5s;
+    margin-top: 15px;
+    width: 100px;
+    border-style: dashed;
+    border: 1px solid #eeeeee;
+    display: inline;
+
+	cursor: pointer;
 }

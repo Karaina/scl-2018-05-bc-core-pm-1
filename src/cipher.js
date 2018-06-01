@@ -1,23 +1,24 @@
 window.cipher = {
-  encode: (offset, string) => { 
+  encode: (string, offset) => { 
     let mensajeCifrado = "";
     for (index=0; index < string.length;index++)
     {
+    string = string.toUpperCase();
      const getIndexACSII = string.charCodeAt(index); 
-      let formulaACSII = (getIndexACSII- 65 + offset )%26 + 65; 
+     let formulaACSII = (getIndexACSII- 65 + offset )%26 + 65; 
       let cipherText = String.fromCharCode(formulaACSII);
-      mensajeCifrado += cipherText;
+            mensajeCifrado += cipherText;
        }
 
 return mensajeCifrado;
   },
 
-  decode: (offset,string) => {
+  decode: (string, offset) => {
     let mensajeCifrado ="";
     for (index=0; index < string.length;index++)
     {
       const getIndexACSII = string.charCodeAt(index); 
-      let formulaACSII = (getIndexACSII- 65 - offset )%26 + 65; 
+      let formulaACSII = (getIndexACSII+ 65 - offset )%26 + 65;
       let cipherText = String.fromCharCode(formulaACSII);
       mensajeCifrado += cipherText;
     }
