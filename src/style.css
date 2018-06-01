@@ -1,7 +1,7 @@
 h1 {
     font-family: 'Share Tech Mono', monospace;
-    color: rgb(24, 17, 17);
-    background: rgb(182, 177, 177);
+    color: #eeeeee;
+    background: #404b69;
     text-align: center;
     font-size: 30pt;
     padding: 10px 20px 10px 20px;
@@ -9,66 +9,78 @@ h1 {
     margin: 0px;
     border-radius: 20px;
     border-style: solid;
-    border-color: #eeeeee;
-
+    border-color: #f3ecc8;
 }
-h3 {
-    font-family: 'Share Tech';
-    color: rgb(24, 17, 17);
-    background: rgb(182, 177, 177);
+p{
+    font-family: 'Share Tech Mono', monospace;
+    color: #f3ecc8;
+    border-radius: 14px;
     text-align: center;
-    font-size: 14pt;
-    padding: 10px 20px;
-    margin: 0px;
     width: 450px;
 }
 
-#buttom {
+.button {
     background:#be3030;
 	border: none;
 	border-radius: 3px;
 	padding: 10px 8px;
 	color: white;
 	font-size: 16px;
-	transition-duration: .5s;
-    margin-top: 15px;
     width: 100px;
     border-style: dashed;
     border: 1px solid #eeeeee;
     display: inline;
 }
 
-.mensaje {
-    font-family: "Share Tech";
-    font-size: 16pt;
-    color: #eeeeee;
-}
-
-#escribirmensaje {
-    border: 1px solid #eeeeee;
-    /*background:#be3030;*/
-    color: black;
-}
-
-#obtenernumero {
-    width: 50px;
-    font-size: 30px;
-
-}
-
-#button:hover {
-    background:#eeeeee;
+.button:hover {
+    background:#f73859;
 	border: none;
 	border-radius: 3px;
 	padding: 10px 8px;
 	color: black;
 	font-size: 16px;
-	transition-duration: .5s;
-    margin-top: 15px;
-    width: 100px;
     border-style: dashed;
     border: 1px solid #eeeeee;
     display: inline;
-
 	cursor: pointer;
+}
+
+
+.mensaje {
+    font-family: "Share Tech";
+    font-size: 16pt;
+    color: #f3ecc8;
+}
+
+#escribirmensaje {
+    border: 1px solid #f3ecc8;
+    color: black;
+    font-size: 16px;
+    width: 300px;
+    height: 100px;
+    margin: 20px;
+}
+
+
+.estilocifrado {
+    font-family: "Share Tech";
+    color: #f3ecc8;
+    font-size: 24px;
+    padding: 10px 8px;
+    
+}
+
+#ingresanumero {
+    width: 50px;
+    font-size: 30px;
+    margin: 8px;
+
+}
+
+.cajadetexto {
+    background: #404b69;
+    width: 450px;
+    height: 150px;
+    border-style: groove;
+    border-color: #526086;
 }

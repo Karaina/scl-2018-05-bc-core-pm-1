@@ -2,31 +2,33 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+maximum-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Share+Tech|Share+Tech+Mono" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body style="background-color: #222222;">
+
+<body style="background-color: #283149;">
   <center>
     <img style="width:150px; height:150px;" src="https://www.romaimperial.com/imagenes/Cayo-Julio-C%C3%A9sar-Imperio-Romano.png">
-       <h1>Bienvenido al cifrado César</h1>  
-    <br></br>
+       <h1>Cifrado César</h1>
+                   <p>Ingrese número <input id="ingresanumero" type= “text”></p>
+              <div class="cajadetexto">
+                       <textarea id="escribirmensaje" rows="7" cols="50">Escriba o pegue su mensaje aquí</textarea>
+      </div>
+      <br>
+  <button class="button" type="submit" onclick="obtenerInformacion()">Cifrar</button>
+  <button class="button" type="submit" onclick="obtenerInformacion2()">Descifrar</button>
 
-        <input id="obtenernumero" type= “text”>
-     <br></br>
-     <h3>Escribe texto aquí</h3>
-     <br></br>
-     <textarea id="escribirmensaje" name="message" rows="7" cols="50"></textarea> </textarea>
-      <br></br>
-  <button id="buttom" type="submit" onclick="obtenerInformacion()">Cifrar</button>
-  <button id="buttom" type="submit"onclick="obtenerInformacion2()">Descifrar</button>
   <br></br>
-<span id="Cuerpo2"></span>
-        <h3>Texto cifrado</h3> 
- <div class="mensaje" id="mensajeCifrado"> </div>
- <div id="mensajedescifrado"> </div>
-<br> </br>
+
+  <div class="cajadetexto">
+      <div class="estilocifrado" id="mensajeCifrado"> </div> 
+      <div class="estilocifrado" id="mensajedescifrado"> </div>
+ </div>
+
 </center>
 
   <div id="root"></div>
