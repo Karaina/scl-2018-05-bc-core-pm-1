@@ -4,8 +4,8 @@ h1 {
     background: #404b69;
     text-align: center;
     font-size: 30pt;
-    padding: 10px 20px 10px 20px;
-    width: 450px;
+    padding: 8px 20px 8px 20px;
+    width: 450px; /*ancho*/
     margin: 0px;
     border-radius: 20px;
     border-style: solid;
@@ -20,6 +20,7 @@ p{
 }
 
 .button {
+    font-family: 'Share Tech Mono', monospace;
     background:#be3030;
 	border: none;
 	border-radius: 3px;
@@ -33,16 +34,17 @@ p{
 }
 
 .button:hover {
+    font-family: 'Share Tech Mono', monospace;
     background:#f73859;
 	border: none;
 	border-radius: 3px;
 	padding: 10px 8px;
 	color: black;
 	font-size: 16px;
-    border-style: dashed;
+    border-style: dashed; 
     border: 1px solid #eeeeee;
     display: inline;
-	cursor: pointer;
+	
 }
 
 
@@ -56,8 +58,8 @@ p{
     border: 1px solid #f3ecc8;
     color: black;
     font-size: 16px;
-    width: 300px;
-    height: 100px;
+    width: 300px; /*ancho*/
+    height: 80px; /*altura*/
     margin: 20px;
 }
 
@@ -71,7 +73,7 @@ p{
 }
 
 #ingresanumero {
-    width: 50px;
+    width: 50px; /*ancho*/
     font-size: 30px;
     margin: 8px;
 
@@ -79,8 +81,9 @@ p{
 
 .cajadetexto {
     background: #404b69;
-    width: 450px;
-    height: 150px;
+    width: 450px; /*ancho*/
+    height: 120px; /*altura*/
     border-style: groove;
     border-color: #526086;
 }
+
